@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<meta name="author" content="Billy Foster">
+	<title>Form Activity Solution File</title>
+
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+
+		<form method="post" action="https://wp.zybooks.com/form-viewer.php">
+			<label for="name">Full Name</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" required>
+
+			<label for="phone">Phone</label>
+			<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+			<fieldset>
+				<legend>Preferred Method of Contact</legend>
+				<label for="email">Email</label>
+				<input type="radio" name="radio1" value="E" id="email" checked>
+				<label for="phone">Phone</label> 
+				<input type="radio" name="radio2" value="P" id="phone">
+				
+			</fieldset>
+			
+			<label for="state">State</label>
+			<select name="state" id="state" name="state" required>
+						<option value="">Choose Your State</option>
+						<option value="alabama">Alabama</option>
+						<option value="alaska">Alaska</option>
+						<option value="arizona">Arizona</option>
+						<option value="arkansas">Arkansas</option>
+						<option value="california">California</option>
+						<option value="colorado">Colorado</option>
+						<option value="connecticut">Connecticut</option>
+						<option value="delaware">Delaware</option>
+						<option value="florida">Florida</option>
+						<option value="georgia">Georgia</option>
+						<option value="hawaii">Hawaii</option>
+						<option value="idaho">Idaho</option>
+						<option value="illinois">Illinois</option>
+						<option value="indiana">Indiana</option>
+						<option value="iowa">Iowa</option>
+						<option value="kansas">Kansas</option>
+						<option value="kentucky">Kentucky</option>
+						<option value="louisiana">Louisiana</option>
+						<option value="maine">Maine</option>
+						<option value="maryland">Maryland</option>
+						<option value="massachusetts">Massachusetts</option>
+						<option value="michigan">Michigan</option>
+						<option value="minnesota">Minnesota</option>
+						<option value="mississippi">Mississippi</option>
+						<option value="missouri">Missouri</option>
+						<option value="montana">Montana</option>
+						<option value="nebraska">Nebraska</option>
+						<option value="newhampshire">New Hampshire</option>
+						<option value="newjersey">New Jersey</option>
+						<option value="newmexico">New Mexico</option>
+						<option value="newyork">New York</option>
+						<option value="northcarolina">North Carolina</option>
+						<option value="northdakota">North Dakota</option>
+						<option value="ohio">Ohio</option>
+						<option value="oklahoma">Oklahoma</option>
+						<option value="oregon">Oregon</option>
+						<option value="pennslvania">Pennsylvania</option>
+						<option value="rhodeisland">Rhode Island</option>
+						<option value="southcarolina">South Carolina</option>
+						<option value="southdakota">South Dakota</option>
+						<option value="tennessee">Tennessee</option>
+						<option value="texas">Texas</option>
+						<option value="utah">Utah</option>
+						<option value="vermont">Vermont</option>
+						<option value="virginia">Virginia</option>
+						<option value="washington">Washington</option>
+						<option value="westvirginia">West Virginia</option>
+						<option value="wisconsin">Wisconsin</option>
+						<option value="wyoming">wyoming</option>
+					</select>
+		
+			<label for="comments">Comments</label>
+			<textarea id="comments" name="comments" rows="3" cols="25"></textarea>
+		   
+			<input type="submit" value="Submit Form">
+			
+
+		</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
